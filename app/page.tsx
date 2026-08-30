@@ -153,7 +153,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <a href="#" className="font-display text-2xl font-bold tracking-tight">
-              Nómada<span className="text-[#FF4D00]">.</span>
+              Nomad<span className="text-[#FF4D00]">.</span>
             </a>
 
             {/* Desktop Navigation */}
@@ -228,7 +228,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.png"
-            alt="Nómada Studio creative workspace"
+            alt="Nomad Creative Co creative workspace"
             fill
             className="object-cover opacity-10"
             priority
@@ -361,7 +361,7 @@ export default function Home() {
           <div className="mt-16 relative rounded-2xl overflow-hidden">
             <Image
               src="/images/feature.png"
-              alt="Nómada Studio design process"
+              alt="Nomad Creative Co design process"
               width={1200}
               height={600}
               className="w-full h-auto object-cover"
@@ -634,7 +634,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
               <a href="#" className="font-display text-3xl font-bold text-white">
-                Nómada<span className="text-[#FF4D00]">.</span>
+                Nomad<span className="text-[#FF4D00]">.</span>
               </a>
               <p className="text-[#6B6B6B] mt-4 max-w-md">
                 UX/UI design studio specialized in creating digital experiences
@@ -673,7 +673,7 @@ export default function Home() {
 
           <div className="pt-8 border-t border-[#1A1A1A] flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-[#6B6B6B] text-sm">
-              © 2024 Nómada Studio. All rights reserved.
+              © 2024 Nomad Creative Co. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <a href="#" className="text-[#6B6B6B] hover:text-[#FF4D00] text-sm transition-colors">
