@@ -224,7 +224,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Centered */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-[#1a1a2e]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.png"
@@ -233,21 +233,21 @@ export default function Home() {
             className="object-cover opacity-10"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#F5F5F3]/50 to-[#F5F5F3]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a2e]/50 to-[#1a1a2e]" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <span className="inline-block mb-6 text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
             UX/UI Design Studio
           </span>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] mb-8">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] mb-8 text-white">
             We design
             <br />
             <span className="text-[#FF4D00]">experiences</span>
             <br />
             that move brands
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#6B6B6B] mb-10">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-white mb-10">
             We transform complex ideas into intuitive and memorable digital products.
             We are the bridge between your vision and the users who will love it.
           </p>
@@ -266,7 +266,7 @@ export default function Home() {
               asChild
               variant="outline"
               size="lg"
-              className="border-[#0A0A0A] text-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white transition-colors duration-300 px-8"
+              className="border-white text-white hover:bg-white hover:text-[#1a1a2e] transition-colors duration-300 px-8"
             >
               <a href="#proceso">Our Process</a>
             </Button>
@@ -275,8 +275,8 @@ export default function Home() {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-[#0A0A0A] rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-2.5 bg-[#0A0A0A] rounded-full" />
+          <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-2.5 bg-white rounded-full" />
           </div>
         </div>
       </section>
