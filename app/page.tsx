@@ -22,35 +22,35 @@ import {
 } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Trabajo', href: '#portfolio' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Proceso', href: '#proceso' },
-  { label: 'Contacto', href: '#contacto' },
+  { label: 'Work', href: '#portfolio' },
+  { label: 'Services', href: '#servicios' },
+  { label: 'Process', href: '#proceso' },
+  { label: 'Contact', href: '#contacto' },
 ];
 
 const caseStudies = [
   {
     title: 'Fintech Dashboard',
-    category: 'Aplicaciones Web',
-    description: 'Rediseño completo de plataforma de inversiones con enfoque en accesibilidad y claridad de datos.',
+    category: 'Web Applications',
+    description: 'Complete redesign of investment platform with a focus on accessibility and data clarity.',
     color: 'bg-[#FF4D00]',
   },
   {
     title: 'E Commerce App',
     category: 'Mobile Design',
-    description: 'App de comercio electrónico con experiencia de compra fluida y checkout optimizado.',
+    description: 'E-commerce app with seamless shopping experience and optimized checkout.',
     color: 'bg-[#0A0A0A]',
   },
   {
     title: 'Health Platform',
     category: 'UX Research',
-    description: 'Plataforma de telemedicina diseñada con base en investigación profunda de usuarios.',
+    description: 'Telemedicine platform designed based on deep user research.',
     color: 'bg-[#6B6B6B]',
   },
   {
     title: 'Brand Identity',
-    category: 'Branding Digital',
-    description: 'Sistema de diseño y identidad visual para startup de tecnología educativa.',
+    category: 'Digital Branding',
+    description: 'Design system and visual identity for an educational technology startup.',
     color: 'bg-[#FF4D00]',
   },
 ];
@@ -58,23 +58,23 @@ const caseStudies = [
 const services = [
   {
     icon: Palette,
-    title: 'Diseño de Interfaces',
-    description: 'Creamos interfaces visuales impactantes que comunican la esencia de tu marca.',
+    title: 'Interface Design',
+    description: 'We create impactful visual interfaces that communicate the essence of your brand.',
   },
   {
     icon: Layers,
-    title: 'Sistemas de Diseño',
-    description: 'Desarrollamos sistemas escalables que mantienen consistencia en todos los puntos de contacto.',
+    title: 'Design Systems',
+    description: 'We develop scalable systems that maintain consistency across all touchpoints.',
   },
   {
     icon: Smartphone,
-    title: 'Diseño Mobile',
-    description: 'Experiencias móviles nativas e intuitivas que los usuarios aman usar.',
+    title: 'Mobile Design',
+    description: 'Native and intuitive mobile experiences that users love to use.',
   },
   {
     icon: Users,
     title: 'UX Research',
-    description: 'Investigación de usuarios que fundamenta cada decisión de diseño.',
+    description: 'User research that informs every design decision.',
   },
 ];
 
@@ -82,34 +82,34 @@ const processSteps = [
   {
     number: '01',
     icon: Target,
-    title: 'Descubrimiento',
-    description: 'Entendemos tu negocio, usuarios y objetivos para definir el camino correcto.',
+    title: 'Discovery',
+    description: 'We understand your business, users, and goals to define the right path.',
   },
   {
     number: '02',
     icon: Lightbulb,
-    title: 'Estrategia',
-    description: 'Definimos la arquitectura de información y flujos que guiarán la experiencia.',
+    title: 'Strategy',
+    description: 'We define the information architecture and flows that will guide the experience.',
   },
   {
     number: '03',
     icon: Palette,
-    title: 'Diseño',
-    description: 'Creamos interfaces que combinan estética y funcionalidad de manera armoniosa.',
+    title: 'Design',
+    description: 'We create interfaces that harmoniously combine aesthetics and functionality.',
   },
   {
     number: '04',
     icon: Rocket,
-    title: 'Entrega',
-    description: 'Entregamos assets listos para desarrollo con documentación completa.',
+    title: 'Delivery',
+    description: 'We deliver development-ready assets with complete documentation.',
   },
 ];
 
 const stats = [
-  { value: '150+', label: 'Proyectos Completados' },
-  { value: '8', label: 'Años de Experiencia' },
-  { value: '40+', label: 'Clientes Satisfechos' },
-  { value: '12', label: 'Premios de Diseño' },
+  { value: '150+', label: 'Projects Completed' },
+  { value: '8', label: 'Years of Experience' },
+  { value: '40+', label: 'Satisfied Clients' },
+  { value: '12', label: 'Design Awards' },
 ];
 
 export default function Home() {
@@ -125,13 +125,13 @@ export default function Home() {
 
   const validateForm = () => {
     const errors: Record<string, string> = {};
-    if (!formData.name.trim()) errors.name = 'El nombre es requerido';
+    if (!formData.name.trim()) errors.name = 'Name is required';
     if (!formData.email.trim()) {
-      errors.email = 'El email es requerido';
+      errors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      errors.email = 'Email inválido';
+      errors.email = 'Invalid email';
     }
-    if (!formData.message.trim()) errors.message = 'El mensaje es requerido';
+    if (!formData.message.trim()) errors.message = 'Message is required';
     return errors;
   };
 
@@ -171,7 +171,7 @@ export default function Home() {
                 asChild
                 className="bg-[#0A0A0A] text-white hover:bg-[#FF4D00] transition-colors duration-300"
               >
-                <a href="#contacto">Hablemos</a>
+                <a href="#contacto">Let's Talk</a>
               </Button>
             </div>
 
@@ -179,7 +179,7 @@ export default function Home() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 -mr-2"
-              aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -216,7 +216,7 @@ export default function Home() {
               style={{ transitionDelay: mobileMenuOpen ? `${navLinks.length * 60}ms` : '0ms' }}
             >
               <a href="#contacto" onClick={() => setMobileMenuOpen(false)}>
-                Hablemos
+                Let's Talk
               </a>
             </Button>
           </div>
@@ -238,18 +238,18 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <span className="inline-block mb-6 text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
-            Estudio de Diseño UX/UI
+            UX/UI Design Studio
           </span>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] mb-8">
-            Diseñamos
+            We design
             <br />
-            <span className="text-[#FF4D00]">experiencias</span>
+            <span className="text-[#FF4D00]">experiences</span>
             <br />
-            que mueven marcas
+            that move brands
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#6B6B6B] mb-10">
-            Transformamos ideas complejas en productos digitales intuitivos y memorables.
-            Somos el puente entre tu visión y los usuarios que la amarán.
+            We transform complex ideas into intuitive and memorable digital products.
+            We are the bridge between your vision and the users who will love it.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
@@ -258,7 +258,7 @@ export default function Home() {
               className="bg-[#FF4D00] text-white hover:bg-[#0A0A0A] transition-colors duration-300 px-8"
             >
               <a href="#portfolio">
-                Ver Trabajo
+                View Work
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
@@ -268,7 +268,7 @@ export default function Home() {
               size="lg"
               className="border-[#0A0A0A] text-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white transition-colors duration-300 px-8"
             >
-              <a href="#proceso">Nuestro Proceso</a>
+              <a href="#proceso">Our Process</a>
             </Button>
           </div>
         </div>
@@ -287,15 +287,15 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
             <div>
               <span className="text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
-                Portafolio
+                Portfolio
               </span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4">
-                Trabajo Seleccionado
+                Selected Work
               </h2>
             </div>
             <p className="max-w-md text-[#6B6B6B] mt-6 md:mt-0">
-              Cada proyecto es una oportunidad para crear algo extraordinario.
-              Aquí está parte de nuestro trabajo más reciente.
+              Every project is an opportunity to create something extraordinary.
+              Here is some of our most recent work.
             </p>
           </div>
 
@@ -331,14 +331,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
-              Servicios
+              Services
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
-              Lo Que Hacemos
+              What We Do
             </h2>
             <p className="max-w-2xl mx-auto text-[#6B6B6B] mt-6">
-              Ofrecemos un espectro completo de servicios de diseño, desde la investigación
-              inicial hasta la entrega de activos listos para desarrollo.
+              We offer a complete spectrum of design services, from initial research
+              to delivery of development-ready assets.
             </p>
           </div>
 
@@ -369,11 +369,11 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/80 to-transparent flex items-center">
               <div className="p-8 lg:p-12 max-w-lg">
                 <h3 className="font-display text-3xl lg:text-4xl font-bold text-white mb-4">
-                  Diseño con propósito
+                  Design with purpose
                 </h3>
                 <p className="text-[#A0A0A0]">
-                  Cada decisión de diseño está fundamentada en investigación y orientada a
-                  resultados medibles para tu negocio.
+                  Every design decision is grounded in research and oriented towards
+                  measurable results for your business.
                 </p>
               </div>
             </div>
@@ -386,13 +386,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
-              Proceso
+              Process
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4">
-              Cómo Trabajamos
+              How We Work
             </h2>
             <p className="max-w-2xl mx-auto text-[#6B6B6B] mt-6">
-              Un proceso probado que garantiza resultados excepcionales en cada proyecto.
+              A proven process that ensures exceptional results in every project.
             </p>
           </div>
 
@@ -442,14 +442,14 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <span className="text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
-                Trabajemos Juntos
+                Let's Work Together
               </span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mt-4 leading-tight">
-                ¿Listo para llevar tu producto al siguiente nivel?
+                Ready to take your product to the next level?
               </h2>
               <p className="text-[#6B6B6B] mt-6 text-lg">
-                Nos encantaría conocer tu proyecto y explorar cómo podemos ayudarte
-                a crear experiencias digitales extraordinarias.
+                We'd love to learn about your project and explore how we can help you
+                create extraordinary digital experiences.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button
@@ -458,7 +458,7 @@ export default function Home() {
                   className="bg-[#FF4D00] text-white hover:bg-[#0A0A0A] transition-colors duration-300"
                 >
                   <a href="#contacto">
-                    Iniciar Proyecto
+                    Start a Project
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
@@ -492,13 +492,13 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
               <span className="text-sm font-medium tracking-widest uppercase text-[#FF4D00]">
-                Contacto
+                Contact
               </span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4">
-                Cuéntanos sobre tu proyecto
+                Tell us about your project
               </h2>
               <p className="text-[#6B6B6B] mt-6 text-lg">
-                Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.
+                Fill out the form and we'll get back to you within 24 hours.
               </p>
 
               <div className="mt-12 space-y-6">
@@ -521,8 +521,8 @@ export default function Home() {
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-display font-bold text-white">Ubicación</h4>
-                    <p className="text-[#6B6B6B]">Trabajo remoto, alcance global</p>
+                    <h4 className="font-display font-bold text-white">Location</h4>
+                    <p className="text-[#6B6B6B]">Remote work, global reach</p>
                   </div>
                 </div>
               </div>
@@ -535,17 +535,17 @@ export default function Home() {
                     <ArrowRight className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-display text-2xl font-bold mb-2">
-                    Mensaje Enviado
+                    Message Sent
                   </h3>
                   <p className="text-[#6B6B6B]">
-                    Gracias por contactarnos. Te responderemos pronto.
+                    Thank you for contacting us. We'll get back to you soon.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Nombre *
+                      Name *
                     </label>
                     <Input
                       id="name"
@@ -554,7 +554,7 @@ export default function Home() {
                         setFormData({ ...formData, name: e.target.value })
                       }
                       className={`w-full ${formErrors.name ? 'border-red-500' : ''}`}
-                      placeholder="Tu nombre"
+                      placeholder="Your name"
                     />
                     {formErrors.name && (
                       <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>
@@ -582,7 +582,7 @@ export default function Home() {
 
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium mb-2">
-                      Empresa
+                      Company
                     </label>
                     <Input
                       id="company"
@@ -591,13 +591,13 @@ export default function Home() {
                         setFormData({ ...formData, company: e.target.value })
                       }
                       className="w-full"
-                      placeholder="Nombre de tu empresa (opcional)"
+                      placeholder="Your company name (optional)"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Mensaje *
+                      Message *
                     </label>
                     <Textarea
                       id="message"
@@ -606,7 +606,7 @@ export default function Home() {
                         setFormData({ ...formData, message: e.target.value })
                       }
                       className={`w-full min-h-[120px] ${formErrors.message ? 'border-red-500' : ''}`}
-                      placeholder="Cuéntanos sobre tu proyecto..."
+                      placeholder="Tell us about your project..."
                     />
                     {formErrors.message && (
                       <p className="text-red-500 text-sm mt-1">{formErrors.message}</p>
@@ -618,7 +618,7 @@ export default function Home() {
                     size="lg"
                     className="w-full bg-[#FF4D00] text-white hover:bg-[#0A0A0A] transition-colors duration-300"
                   >
-                    Enviar Mensaje
+                    Send Message
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </form>
@@ -637,12 +637,12 @@ export default function Home() {
                 Nómada<span className="text-[#FF4D00]">.</span>
               </a>
               <p className="text-[#6B6B6B] mt-4 max-w-md">
-                Estudio de diseño UX/UI especializado en crear experiencias digitales
-                que conectan marcas con sus usuarios.
+                UX/UI design studio specialized in creating digital experiences
+                that connect brands with their users.
               </p>
             </div>
             <div>
-              <h4 className="font-display font-bold text-white mb-4">Navegación</h4>
+              <h4 className="font-display font-bold text-white mb-4">Navigation</h4>
               <ul className="space-y-3">
                 {navLinks.map((link) => (
                   <li key={link.href}>
@@ -657,7 +657,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-display font-bold text-white mb-4">Contacto</h4>
+              <h4 className="font-display font-bold text-white mb-4">Contact</h4>
               <ul className="space-y-3">
                 <li>
                   <a
@@ -673,14 +673,14 @@ export default function Home() {
 
           <div className="pt-8 border-t border-[#1A1A1A] flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-[#6B6B6B] text-sm">
-              © 2024 Nómada Studio. Todos los derechos reservados.
+              © 2024 Nómada Studio. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <a href="#" className="text-[#6B6B6B] hover:text-[#FF4D00] text-sm transition-colors">
-                Política de Privacidad
+                Privacy Policy
               </a>
               <a href="#" className="text-[#6B6B6B] hover:text-[#FF4D00] text-sm transition-colors">
-                Términos de Uso
+                Terms of Use
               </a>
             </div>
           </div>
